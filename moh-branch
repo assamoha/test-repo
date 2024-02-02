@@ -10,3 +10,11 @@ terraform  {
 provider "aws"  {
  region = "us-east-2"
 }
+resource "aws_iam_user" "Ansible" {
+  name = "Ansible"
+}
+
+resource "aws_iam_group" "Ansiblegroup" {
+  name = "Ansiblegroup"
+  
+}
