@@ -1,0 +1,20 @@
+terraform  {
+    required_providers {
+    aws = { 
+    source  = "hashicorp/aws"
+    version  = "4.67.0"
+    }
+ }
+}
+# configure  the AWS Providers
+provider "aws"  {
+ region = "us-east-2"
+}
+resource "aws_iam_user" "Ansible" {
+  name = "Ansible"
+}
+
+resource "aws_iam_group" "Ansiblegroup" {
+  name = "Ansiblegroup"
+  
+}
