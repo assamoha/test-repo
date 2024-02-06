@@ -14,7 +14,7 @@ resource "aws_iam_user" "Rayan" {
   name = "Rayan"
 }
 
-resource "aws_iam_group" "Devopsgroup" {
-  name = "Devops"
+resource "aws_iam_group" "Toliergroup" {
+  name = "Toliergroup"
   
 }
